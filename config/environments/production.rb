@@ -79,5 +79,5 @@ Rails.application.configure do
   
   # Per Devise installation instructions
   config.action_mailer.default_url_options = { host: 'https://sandysarticles.herokuapp.com/' }
-end
+
 end

@@ -1,6 +1,6 @@
-<% if current_user %>
+<%# if current_user %>
 
-<footer class="footer-distributed">
+<footer class="footer-distributed navbar-fixed-bottom">
     <div class="footer-right">
         <a href="https://www.facebook.com/Sandra.E.Hogan"><i class="fa fa-facebook"></i></a>
         <a href="https://twitter.com/SandyVern"><i class="fa fa-twitter"></i></a>
@@ -10,17 +10,17 @@
     <div class="footer-left">
         <p class="footer-links">
         ·
-        <a class="page-scroll" href="#portfolio">Contact Us</a>
+        <%= link_to "Contact Us", pages_contact_path, class: 'page-scroll' %>
         ·
-        <a class="page-scroll" href="#services">About Us</a>
+        <%= link_to "About Us", pages_about_path, class: 'page-scroll' %>
         ·
         </p>
         
         <p></p>
     </div>
 </footer>
-
-<% else %>
+<!--
+<%# else %>
 
 <footer class="footer-distributed">
     <div class="footer-left">
@@ -55,6 +55,6 @@
             </form>
     </div>
 </footer>
-
-<% end %>
+-->
+<%# end %>
 

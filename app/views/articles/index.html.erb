@@ -11,10 +11,10 @@
             
                 <!-- Author -->
                 <p>
-                Article By:<strong> <%= article.user.username %></strong>
+                    Article By:<strong> <%= article.user.username %></strong>
                 </p>
     <hr>
-            <!-- articleed Comments -->
+            <!-- Article Comments -->
             <!-- Comment -->
             <% end %>
             <%= link_to "New article", new_article_path, class: "btn btn-default btn-xs" %>
@@ -33,5 +33,6 @@
     </div>
 </div>
 <br>
-
-<%= will_paginate @articles, renderer: BootstrapPagination::Rails %>
+<div class="text-center">
+    <%= will_paginate @articles, renderer: BootstrapPagination::Rails, class: 'pagination' %>
+</div>

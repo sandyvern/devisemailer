@@ -1,19 +1,6 @@
-<div class="row">
-   <!-- Blog Post Content Column -->
-   <div class="col-lg-8">
-   <!-- Blog Post -->
-     <!-- Title -->
-     <div class="jumbotron">
-      <h1>Welcome to Sandy's Articles</h1>
-      <p>An awesome applications built with Rails!</p>
-     </div>
-     <!-- Author -->
-     <p class="lead">
-     by <a href="http://sandyhoganwebdev.com/"> Sandy Hogan</a>
-     </p>
-     <hr>
-     
-     <!-- Date/Time -->
+<!-- index page sections from the theme incase I want to include them in the future -->
+
+ <!-- Date/Time -->
  <p><span class="glyphicon glyphicon-time"></span> Posted on August 24, 2013 at 9:00 PM</p>
  <hr>
  <!-- Preview Image -->
@@ -142,17 +129,3 @@ ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
  <!-- /.row -->
  </div>
  
-     
-
- <!-- Side Widget Well -->
- <div class="well">
-  <h4>Recent Posts</h4>
-  <% @articles.each do |a| %>
-  Created by: <%= a.user.username %> <br>
-   <strong><%= link_to a.title, a %></strong>
-   <p><%= truncate(a.body) %></p>
-  <% end %>
- </div>
-</div>
-<!-- /.row -->
-<hr>

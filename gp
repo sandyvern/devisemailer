@@ -1,4 +1,4 @@
 git add -A 
-git commit -m "set up contact_mailers, contacts_controller, contact resources"
-git push origin master
+git commit -m "added controller for comments and view partials"
+git push origin comments
 git push heroku master
